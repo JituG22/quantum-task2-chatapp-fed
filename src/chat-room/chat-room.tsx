@@ -88,7 +88,7 @@ export default function ChatRoom({ loginUser }: ChatRoomProps) {
       socket.emit("chat message", newMessage);
 
       // Update the messages state to include the new message at the start
-      setMessages((prevMessages) => [...prevMessages, newMessage]);
+      //setMessages((prevMessages) => [...prevMessages, newMessage]);
 
       setMessage(""); // Clear the input field after sending the message
     } else {
